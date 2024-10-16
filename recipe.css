@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    /* background-color: #000000; */
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
+}
+
+/* nav bar */
+.navContainer{
+    background-color: hsla(227, 37%, 10%, 0.952);
+    height: 10%;
+    width: 100%;
+    padding: 0px;
+    /* background-color: #0B192C; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow:auto; */
+    
+}
+
+.navList{
+    height: 60px;
+    width: 100vw;
+    padding: 15px;
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+        
+    margin: 20px;
+    font-size: 2.6rem;
+    color:#FF6500;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 1000;
+    font-style:normal;
+    font-variant:small-caps ;
+    
+}
+
+.navItems{
+    margin: 20px;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* main */
+
+.contentBox{
+    height:70%;
+    width: 60%;
+    padding: 40px;
+    margin: auto;
+    /* background-color:  #08111f; */
+    background-color:  #223046;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 2px 2px 30px black;
+    overflow: auto;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* leftBox */
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+
+u{
+    text-underline-offset: 4px;
+}
+
+.headingBox{
+    font-size: 30px; color: #FF6500;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.ingredientsBox{
+    font-size: 19px; color: #FF6500;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.recipeBox{
+    font-size: 19px; color: #FF6500;
+    
+}
+/* rightbox */
+.rightBox{
+    position: relative;
+    /* overflow: hidden; */
+    transition: all 0.5s linear 0s;
+}
+
+.rightBox img{
+    height: 350px;
+    border-radius: 30px;
+    transition: all 0.5s linear 0s;
+}
+
+.rightBox:hover{
+    transform: scale(1.1);
+}
+
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.651);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s linear 0s;
+
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;
+} 
+
+@media screen and (max-width:646px) {
+    .item{
+        flex-direction: column;
+    }
+    .contentBox{
+        width:auto;
+    }
+    .logo{
+        margin:5px;
+        font-size: 2rem;
+    }
+    .navItems{
+        margin:5px;
+        gap:12px;
+    }
+    .item{
+        gap:30px;
+    }
+}
+
+
+
+/* footer */
+.footerBox{
+    height: 7vh;
+    width: 100vw;
+    background-color:  hsla(226, 33%, 21%, 0.952);
+    /* text-align: center; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
